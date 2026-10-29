@@ -1,0 +1,33 @@
+
+name: Build ShubhCore
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Build plugin
+        run: mvn -B package
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShubhCore0.26.2
+          path: target/*.jar
+          
