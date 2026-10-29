@@ -1,0 +1,40 @@
+economy:
+  currency-name: Shubhcoins
+  currency-short: SHC
+  bank-loan-max: 100000
+settings:
+  scoreboard-update-ticks: 20
+  animated-title: true
+  tab-header: '&6&lSHUBH HYPIXEL'
+  tab-footer: '&7Play fair • Have fun!'
+  default-rank: PLAYER
+ranks:
+  OWNER:
+    prefix: '&4&lOWNER &f'
+    weight: 1
+  DEV:
+    prefix: '&b&lDEV &f'
+    weight: 2
+  ADMIN:
+    prefix: '&c&lADMIN &f'
+    weight: 3
+  MOD:
+    prefix: '&2&lMOD &f'
+    weight: 4
+  VIP:
+    prefix: '&6&lVIP &f'
+    weight: 5
+  PLAYER:
+    prefix: '&7PLAYER &f'
+    weight: 6
+scoreboard:
+  lines:
+    - '&8&m----------------'
+    - '&fRank: &a%rank%'
+    - '&fWallet: &a%wallet% SHC'
+    - '&fBank: &e%bank% SHC'
+    - '&fOnline: &a%online%'
+    - '&fWorld: &b%world%'
+    - '&eplay.shubh-hypixel.net'
+    - '&8&m----------------'
+players: {}

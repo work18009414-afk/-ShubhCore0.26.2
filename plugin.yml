@@ -1,0 +1,34 @@
+name: ShubhCore0.26.2
+version: '0.26.2'
+main: com.shubhcore.ShubhCore
+api-version: '1.21'
+author: Shubh
+website: https://papermc.io/
+description: TAB, animated sidebar, rank tags, spawn, rank management, wallet and bank economy for SHUBH HYPIXEL.
+commands:
+  shc:
+    description: ShubhCore main command and Shubhcoins economy
+    usage: /shc help
+    aliases: [shubhcore]
+  shcb:
+    description: ShubhCore bank, deposits, withdrawals, and bank loans
+    usage: /shcb <balance|deposit|withdraw|loan>
+permissions:
+  shubhcore.admin:
+    description: Access ShubhCore admin commands
+    default: op
+  shubhcore.rank:
+    description: Change player ranks
+    default: op
+  shubhcore.reload:
+    description: Reload ShubhCore config
+    default: op
+  shubhcore.economy.admin:
+    description: Manage player wallet balances with /shc eco
+    default: op
+  shubhcore.economy.loan:
+    description: Use bank and player loan commands
+    default: true
+  shubhcore.economy.others:
+    description: View another player's wallet balance
+    default: op
